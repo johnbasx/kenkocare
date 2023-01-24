@@ -10,36 +10,36 @@ import {
 
 const BottomNav = () => {
   return (
-    <nav className='fixed bottom-0 inset-x-0 bg-white flex justify-between text-xs text-black'>
+    <nav className='fixed inset-x-0 bottom-0 flex justify-between text-xs text-black border-t shadow-2xl bg-gray-300/20 backdrop-blur-md drop-shadow-2xl border-gray-200/20'>
       <Link
         href='#'
-        className='w-full flex flex-col py-3 px-3 justify-center items-center text-center font-medium hover:text-blue-800'
+        className='flex flex-col items-center justify-center w-full px-3 py-3 font-medium text-center hover:text-blue-800'
       >
-        <TbSmartHome className='h-6 w-6' />
+        <TbSmartHome className='w-6 h-6' />
         <span>Home</span>
       </Link>
 
       <Link
         href='#'
-        className='w-full flex flex-col py-3 px-3 justify-center items-center text-center font-medium hover:text-blue-800'
+        className='flex flex-col items-center justify-center w-full px-3 py-3 font-medium text-center hover:text-blue-800'
       >
-        <TbCalendarStats className='h-6 w-6' />
+        <TbCalendarStats className='w-6 h-6' />
         <span>Appointments</span>
       </Link>
 
       <Link
         href='#'
-        className='w-full flex flex-col py-3 px-3 justify-center items-center text-center font-medium hover:text-blue-800'
+        className='flex flex-col items-center justify-center w-full px-3 py-3 font-medium text-center hover:text-blue-800'
       >
-        <TbReportMedical className='h-6 w-6' />
+        <TbReportMedical className='w-6 h-6' />
         <span>Reports</span>
       </Link>
 
       <Link
         href='#'
-        className='w-full flex flex-col py-3 px-3 justify-center items-center text-center font-medium hover:text-blue-800'
+        className='flex flex-col items-center justify-center w-full px-3 py-3 font-medium text-center hover:text-blue-800'
       >
-        <TbHeartbeat className='h-6 w-6' />
+        <TbHeartbeat className='w-6 h-6' />
         <span>Profile</span>
       </Link>
     </nav>
