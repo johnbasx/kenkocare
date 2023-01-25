@@ -36,8 +36,8 @@ const HorizontalCard = ({ ...data }: RecommendedProps) => {
 const HorizontalScoll = () => {
   return (
     <>
-      <div className='flex flex-col m-auto p-auto'>
-        <div className='flex items-center justify-between px-3 py-5 mx-2 text-xl font-bold text-black pt-7 lg:px-20 md:px-10 lg:mx-40 md:mx-20'>
+      <div className='flex flex-col m-auto max-w-7xl p-auto'>
+        <div className='flex items-center justify-between px-3 py-5 mx-2 text-xl font-bold text-black pt-7'>
           <div className='flex items-center space-x-1'>
             <TbMedicalCross className='w-5 h-5 text-emerald-500' />
             <h1>Recommended for you</h1>

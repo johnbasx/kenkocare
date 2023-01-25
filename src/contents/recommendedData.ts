@@ -63,4 +63,12 @@ export const recommendedData = <RecommendedProps[]>[
       "https://images.unsplash.com/photo-1612277795421-9bc7706a4a34?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGhlYWx0aGNhcmV8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
     link: "#!",
   },
+  {
+    id: 1018,
+    name: "Bones & Fractures",
+    color: "red",
+    imageUrl:
+      "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fG1lZGljYWx8ZW58MHx8MHx8&auto=format&fit=crop&w=900&q=60",
+    link: "#!",
+  },
 ];

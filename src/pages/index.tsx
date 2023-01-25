@@ -17,6 +17,7 @@ import { RiSyringeLine } from "react-icons/ri";
 import HorizontalScoll from "@/components/HorizontalScoll";
 import BottomNav from "@/components/BottomNav";
 import Link from "next/link";
+import QuickActions from "@/components/QuickActions";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +28,7 @@ export default function Home() {
         <div className='py-2 text-xs font-semibold text-center bg-gradient-to-r from-purple-700 to-indigo-600 text-rose-50 animate-pulse'>
           <p className='animate-none'>Web application under Development</p>
         </div>
-        <div className='grid grid-cols-1 gap-2 px-4 pt-6 pb-4'>
+        <div className='grid grid-cols-1 gap-2 px-4 pt-6 pb-4 mx-auto max-w-7xl'>
           <div className='flex items-center justify-start gap-4'>
             <Image
               src='/logo/Medilane.png'
@@ -63,50 +64,16 @@ export default function Home() {
               className='w-full px-3 py-3 pl-10 text-sm bg-white border rounded-lg shadow-lg placeholder:font-medium'
             />
           </div>
-          <div>
-            <h2 className='font-semibold text-white'>Quick Actions</h2>
-            <div className='flex flex-wrap items-center justify-start gap-2 py-2 text-rose-50'>
-              <Link href='#!'>
-                <div className='flex items-center justify-center px-4 py-2 space-x-1 text-xs font-semibold rounded-full bg-rose-700'>
-                  <TbPhone className='w-5 h-5 rounded-full' />
-                  <label>Call</label>
-                </div>
-              </Link>
-              <Link href='#!'>
-                <div className='flex items-center justify-center px-4 py-2 space-x-1 text-xs font-semibold rounded-full bg-rose-700'>
-                  <TbBrandWhatsapp className='w-5 h-5 rounded-full' />
-                  <label>Whatsapp</label>
-                </div>
-              </Link>
-              <Link href='#!'>
-                <div className='flex items-center justify-center px-4 py-2 space-x-1 text-xs font-semibold rounded-full bg-rose-700'>
-                  <TbEmergencyBed className='w-5 h-5 rounded-full' />
-                  <label>Emergency</label>
-                </div>
-              </Link>
-              <Link href='#!'>
-                <div className='flex items-center justify-center px-4 py-2 space-x-1 text-xs font-semibold rounded-full bg-rose-700'>
-                  <TbPlaneDeparture className='w-5 h-5 rounded-full' />
-                  <label>Air Ambulance</label>
-                </div>
-              </Link>
-              <Link href='#!'>
-                <div className='flex items-center justify-center px-4 py-2 space-x-1 text-xs font-semibold rounded-full bg-rose-700'>
-                  <TbStethoscope className='w-5 h-5 rounded-full' />
-                  <label>Consult a Doctor</label>
-                </div>
-              </Link>
-            </div>
-          </div>
+          <QuickActions />
         </div>
 
         <div className='bg-white pb-20 rounded-t-[2.5rem] h-full mt-2 overflow-hidden'>
           <HorizontalScoll />
-          <div>
+          <div className='mx-auto max-w-7xl'>
             <h1 className='flex px-4 py-5 mx-2 text-xl font-bold text-black lg:px-20 md:px-10 lg:mx-40 md:mx-20'>
               About your health
             </h1>
-            <div className='grid grid-cols-2 gap-4 px-6'>
+            <div className='grid grid-cols-2 gap-4 px-6 lg:grid-cols-4'>
               {[1, 2, 3, 4].map((data, index) => (
                 <div
                   className='p-4 space-y-2 bg-gray-100 border-4 border-indigo-100 aspect-square rounded-3xl'
